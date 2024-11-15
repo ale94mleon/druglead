@@ -44,7 +44,7 @@ keywords = [
     "genetic algorithm",
 ]
 
-requires-python = ">= 3.8 , < 3.12"
+requires-python = ">= 3.8 , < 3.13"
 dependencies = [
     "crem",
     "tqdm",
@@ -55,6 +55,7 @@ dependencies = [
     "meeko>=0.4.0,<0.6.0",
     "six",
     "rdkit>=2022.3.5",
+    "rdkit>=2022.3.5,<=2023.9.6; python_version>='3.12'",
     "scipy",  # a meeko dependency
 ]
 

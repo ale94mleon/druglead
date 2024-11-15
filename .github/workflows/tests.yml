@@ -30,7 +30,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macOS-latest] #windows-latest (vina is not available for windows in conda-forge),m think about use bioconda autodock-vina
-        python-version: [3.8, 3.9, '3.10', 3.11]
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
